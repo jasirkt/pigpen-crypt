@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pigpen-crypt/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/pigpen-crypt/static/js/main.b8eba028.chunk.js",
+    "main.js.map": "/pigpen-crypt/static/js/main.b8eba028.chunk.js.map",
+    "runtime-main.js": "/pigpen-crypt/static/js/runtime-main.69b83e4b.js",
+    "runtime-main.js.map": "/pigpen-crypt/static/js/runtime-main.69b83e4b.js.map",
+    "static/js/2.923354eb.chunk.js": "/pigpen-crypt/static/js/2.923354eb.chunk.js",
+    "static/js/2.923354eb.chunk.js.map": "/pigpen-crypt/static/js/2.923354eb.chunk.js.map",
+    "static/js/3.64e9e513.chunk.js": "/pigpen-crypt/static/js/3.64e9e513.chunk.js",
+    "static/js/3.64e9e513.chunk.js.map": "/pigpen-crypt/static/js/3.64e9e513.chunk.js.map",
+    "index.html": "/pigpen-crypt/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/pigpen-crypt/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.923354eb.chunk.js.LICENSE.txt": "/pigpen-crypt/static/js/2.923354eb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69b83e4b.js",
+    "static/js/2.923354eb.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.b8eba028.chunk.js"
+  ]
+}
