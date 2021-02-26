@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, TextField } from '@material-ui/core';
 import useStyles from './styles';
+import {PigpenLetterIcon} from '../Icons';
 
 function RightPane(props) {
   const classes = useStyles();
@@ -22,22 +23,14 @@ function RightPane(props) {
           className={classes.pigpenKey}
           onClick={() => onButtonPress(alphabet)}
           >
-          {alphabet}
+          <PigpenLetterIcon alphabet={alphabet} />
         </Button>
       ))}
     </div>
     <div className={classes.pigpenTextContainer}>
-      <TextField
-        className={classes.pigpenText}
-        variant="outlined"
-        value={props.value}
-        onChange={onTextChange}
-        InputProps={{
-            classes: {
-              input: classes.pigpenTextInput,
-            },
-          }}
-        fullWidth/>
+      {props.value.split('').map(alphabet => (
+        <PigpenLetterIcon alphabet={alphabet} />))
+      }
     </div>
   </div>;
 }

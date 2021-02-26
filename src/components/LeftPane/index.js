@@ -16,6 +16,8 @@ function LeftPane(props) {
         variant="outlined"
         value={props.value}
         onChange={onTextChange}
+        multiline
+        rows={10}
         fullWidth/>
     </div>
   </div>;
