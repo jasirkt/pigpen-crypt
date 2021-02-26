@@ -14,7 +14,7 @@ export const PigpenLetterIcon = props => {
     else if (variant == 1) iconSet = GridXGridX;
     else if (variant == 2) iconSet = GridGridGrid;
     else if (variant == 3) iconSet = Alternate;
-    else throw new Error("no icon");
+    else throw new Error("Unknown variant");
 
     return iconSet[alphabet.toUpperCase()](props);
   } catch (err) {
