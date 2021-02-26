@@ -9,7 +9,7 @@ function App() {
 
   const [text, setText] = useState("A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.");
 
-  const onChange = event => setText(event.target.value);
+  const onChange = value => setText(value);
 
   return (
     <div className="App">

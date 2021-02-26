@@ -4,13 +4,18 @@ import useStyles from './styles';
 
 function LeftPane(props) {
   const classes = useStyles();
+
+  const onTextChange = event => {
+    props.onChange(event.target.value);
+  }
+
   return <div className={classes.root}>
 
     <div className={classes.normalTextContainer}>
       <TextField
         variant="outlined"
         value={props.value}
-        onChange={props.onChange}
+        onChange={onTextChange}
         fullWidth/>
     </div>
   </div>;
