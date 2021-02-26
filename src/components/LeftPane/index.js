@@ -4,17 +4,15 @@ import useStyles from './styles';
 
 function LeftPane(props) {
   const classes = useStyles();
-  return <div class={classes.root}>
-    <div className = {classes.typeSelectorContainer}>
-      <Select className={classes.typeSelector}>
-        <MenuItem value={10}>Ten</MenuItem>
-        <MenuItem value={20}>Twenty</MenuItem>
-        <MenuItem value={30}>Thirty</MenuItem>
-      </Select>
-    </div>
+  return <div className={classes.root}>
 
-    
-    <TextField variant="outlined"/>
+    <div className={classes.normalTextContainer}>
+      <TextField
+        variant="outlined"
+        value={props.value}
+        onChange={props.onChange}
+        fullWidth/>
+    </div>
   </div>;
 }
 

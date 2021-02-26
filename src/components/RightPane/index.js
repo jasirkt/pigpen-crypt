@@ -33,7 +33,19 @@ function RightPane(props) {
       <Button className={classes.pigpenKey}>Y</Button>
       <Button className={classes.pigpenKey}>Z</Button>
     </div>
-    <TextField variant="outlined" />
+    <div className={classes.pigpenTextContainer}>
+      <TextField
+        className={classes.pigpenText}
+        variant="outlined"
+        value={props.value}
+        onChange={props.onChange}
+        InputProps={{
+            classes: {
+              input: classes.pigpenTextInput,
+            },
+          }}
+        fullWidth/>
+    </div>
   </div>;
 }
 

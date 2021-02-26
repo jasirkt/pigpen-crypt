@@ -2,12 +2,15 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    backgroundColor: '#c1c1c1',
+    borderRight: '1px solid black',
     flex: '50%',
   },
-  typeSelectorContainer: {
-    display: 'flex',
-    flexBasis: '100%',
+  // typeSelectorContainer: {
+  //   display: 'flex',
+  //   flexBasis: '100%',
+  // },
+  normalTextContainer: {
+    padding: '30px 60px 10px',
   },
 }));
 
