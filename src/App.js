@@ -1,8 +1,10 @@
 import { withStyles } from '@material-ui/core/styles';
 import LeftPane from './components/LeftPane';
 import RightPane from './components/RightPane';
+import Header from './components/Header';
 import useStyles from './styles';
 import {useState} from 'react';
+import { Grid } from '@material-ui/core';
 
 function App() {
   const classes = useStyles();
@@ -13,12 +15,16 @@ function App() {
 
   return (
     <div className="App">
-      <header className={classes.header}>
-        <h1>Pigpen Crypt</h1>
-      </header>
+      <Header />
+      <Grid container>
+         <Grid item xs={6}>
+           <LeftPane value={text} onChange={onChange} />
+         </Grid>
+         <Grid item xs={6}>
+           <RightPane value={text} onChange={onChange} />
+         </Grid>
+      </Grid>
       <div className={classes.content}>
-        <LeftPane value={text} onChange={onChange} />
-        <RightPane value={text} onChange={onChange} />
       </div>
 
 

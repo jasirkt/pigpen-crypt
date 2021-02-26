@@ -2,7 +2,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    flex: '50%',
   },
   buttonContainer: {
     padding: '30px 60px 10px',
