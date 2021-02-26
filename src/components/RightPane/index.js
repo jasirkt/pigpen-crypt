@@ -23,13 +23,13 @@ function RightPane(props) {
           className={classes.pigpenKey}
           onClick={() => onButtonPress(alphabet)}
           >
-          <PigpenLetterIcon alphabet={alphabet} />
+            <PigpenLetterIcon alphabet={alphabet} width="50px" height="50px" strokeWidth="2px" />
         </Button>
       ))}
     </div>
     <div className={classes.pigpenTextContainer}>
       {props.value.split('').map(alphabet => (
-        <PigpenLetterIcon alphabet={alphabet} />))
+        <PigpenLetterIcon alphabet={alphabet} width="25px" height="25px" strokeWidth="1px" />))
       }
     </div>
   </div>;
