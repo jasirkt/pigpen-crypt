@@ -10,18 +10,17 @@ function App() {
   const classes = useStyles();
 
   const [text, setText] = useState("A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.");
-
-  const onChange = value => setText(value);
+  const [variant, setVariant] = useState(0);
 
   return (
     <div className="App">
       <Header />
       <Grid container>
          <Grid item xs={6}>
-           <LeftPane value={text} onChange={onChange} />
+           <LeftPane value={text} onChange={setText} variant={variant} onVariantChange={setVariant}/>
          </Grid>
          <Grid item xs={6}>
-           <RightPane value={text} onChange={onChange} />
+           <RightPane text={text} onTextChange={setText} variant={variant} onVariantChange={setVariant}/>
          </Grid>
       </Grid>
       <div className={classes.content}>

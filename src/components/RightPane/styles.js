@@ -8,7 +8,6 @@ const useStyles = makeStyles(theme => ({
     padding: '30px 60px 10px',
   },
   pigpenKey: {
-    fontFamily: 'Pigpen Cipher',
     border: '1px solid black',
     padding: '5px 0px',
     minWidth: '46px',
@@ -17,9 +16,6 @@ const useStyles = makeStyles(theme => ({
   },
   pigpenTextContainer: {
     padding: '30px 60px 10px',
-  },
-  pigpenTextInput: {
-    fontFamily: 'Pigpen Cipher',
   },
 }));
 

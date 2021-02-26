@@ -7,31 +7,35 @@ function RightPane(props) {
   const classes = useStyles();
   const alphabets = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 
-  const onTextChange = event => {
-    props.onChange(event.target.value);
-  }
+  const {text, variant} = props;
 
-  const onButtonPress = letter => {
-    props.onChange(props.value + "" + letter);
+  const handleKeyPress = letter => {
+    props.onTextChange(text + "" + letter);
   }
 
   return <div className = {classes.root}>
+
+
     <div className={classes.buttonContainer}>
       {alphabets.map(alphabet => (
         <Button
           key={alphabet}
           className={classes.pigpenKey}
-          onClick={() => onButtonPress(alphabet)}
+          onClick={() => handleKeyPress(alphabet)}
           >
-            <PigpenLetterIcon alphabet={alphabet} width="50px" height="50px" strokeWidth="2px" />
+            <PigpenLetterIcon alphabet={alphabet} variant={variant} width="50px" height="50px" strokeWidth="2px" />
         </Button>
       ))}
     </div>
+
+
     <div className={classes.pigpenTextContainer}>
-      {props.value.split('').map(alphabet => (
-        <PigpenLetterIcon alphabet={alphabet} width="25px" height="25px" strokeWidth="1px" />))
+      {text.split('').map(alphabet => (
+        <PigpenLetterIcon alphabet={alphabet} variant={variant} width="25px" height="25px" strokeWidth="1px" />))
       }
     </div>
+
+
   </div>;
 }
 
